@@ -1,0 +1,7 @@
+MVI B,30H
+MOV A,B
+RRC
+JC END
+MOV A,B
+OUT 40H
+END: hlt
